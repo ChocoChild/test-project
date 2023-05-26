@@ -87,11 +87,6 @@
     display: flex;
     justify-content: space-between;
     margin-bottom: 90px;
-
-    img {
-        max-width: 494px;
-        height: auto;
-    }
 }
 
 .content--info__text {
@@ -106,6 +101,11 @@
         font-size: 14px;
         font-weight: 400;
     }
+.content--info__ img {
+    img {
+        width: 100%;
+    }
+}
 }
 
 .skills--info {
@@ -141,14 +141,17 @@
 }
 
 .main--content__project {
-   display: grid;
+   display: flex;
+   flex-direction: column;
    justify-content: center;
    align-items: center;
    margin-top: 80px;
    margin-bottom: 90px;
-   img {
+    
+    img {
         width: 100%;
-   }
+        height: auto;
+    }
 
     p {
         text-align: center;
@@ -236,6 +239,18 @@
         width: auto;
     }
 
+    .content--nav-bar__link {
+        padding-right: 20px;
+    }
+
+    .content--info__text {
+        padding-left: 20px;
+    }
+
+    .skills--info {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
   
 }
 
@@ -277,14 +292,14 @@
     }
 
     .content--info__img {
-        img {
-            margin-left: 150px;
-        }
+        display: flex;
+        flex-direction: column;
     }
 
     .skills--info {
         display: flex;
         flex-direction: column;
+        align-items: center;
         text-align: left;
         padding-left: 40px;
 
@@ -328,12 +343,6 @@
             font-size: 20px;
         }
     }
-
-    .content--info__img {
-        img {
-            margin-left: 70px;
-        }
-    }
   }
 
   @media(max-width: 600px) {
@@ -351,13 +360,9 @@
 
     .content--nav-bar__link {
         top: 10px;
-        right: -205px;
+        right: -222px;
     }
-    .content--info__img {
-        img {
-            margin-left: 40px;
-        }
-    }
+
   }
 
   @media(max-width: 510px) {
@@ -365,6 +370,9 @@
         img {
             max-width: 400px;
         }
+    .content--nav-bar__link {
+        right: -222px;
+    }
     }
 
     .content--info__text {
@@ -381,26 +389,31 @@
         }
     }
 
-    .content--info__img {
-        img {
-            margin-left: 0;
-        }
-    }
   }
 
   @media(max-width: 450px) {
     .content--info__text {
-        text-align: center;
+        padding-left: 0
         h2 {
-            font-size: 22px;
+            font-size: 24px;
         }
+        p {
+        display: none;
+       }
     }
 
     .content--nav-bar__link {
-        right: -222px;
+        right: -185px;
 
-        li{
+        ul {
             column-gap: 30px;
+        }
+    }
+
+
+    .main--content__project {
+        p {
+            font-size: 18px;
         }
     }
   }
