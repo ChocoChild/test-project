@@ -1,0 +1,24 @@
+{
+    "skills": [
+        {
+            "id": 0,
+            "imageUrl": "https://img.icons8.com/ios-filled/100/imac-settings.png",
+            "title": "UI/UX DESIGN",
+            "subtitle": "Our design is translated into comprehensive digital environments built on latest development standards."
+        },
+    
+        {
+            "id": 1,
+            "imageUrl": "https://img.icons8.com/ios/100/code--v1.png",
+            "title": "DEVELOPMENT",
+            "subtitle": "Our design is translated into comprehensive digital environments built on latest development standards."
+        },
+    
+        {
+            "id": 2,
+            "imageUrl": "https://img.icons8.com/color/100/backend-development--v1.png",
+            "title": "SOFTWARE TESTING",
+            "subtitle": "Our design is translated into comprehensive digital environments built on latest development standards."
+        }
+    ]
+}

@@ -1,0 +1,19 @@
+[
+    {
+        "id": 0,
+        "imageUrl": "https://img.freepik.com/premium-vector/sneaker-cartoon-vector-illustration-isolated_484148-184.jpg",
+        "title": "Online fashion store - Homepage"
+    },
+
+    {
+        "id": 1,
+        "imageUrl": "https://cached.imagescaler.hbpl.co.uk/resize/scaleWidth/815/cached.offlinehbpl.hbpl.co.uk/news/OMC/Reebokdelta-20140303113357992.jpg",
+        "title": "Reebok Store - Concept"
+    },
+
+    {
+        "id": 2,
+        "imageUrl": "https://cdn.dribbble.com/users/177705/screenshots/5115225/braun_digital_camera.png",
+        "title": "Braun Landing Page - Concept"
+    }
+]
