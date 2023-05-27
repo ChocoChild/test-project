@@ -1,10 +1,9 @@
 import React from "react";
 import Header from "./components/Header";
-
-import './scss/all.scss';
-
 import Main from "./components/Main";
 import Footer from "./components/Footer";
+
+import './scss/all.scss';
 
 function App() {
 

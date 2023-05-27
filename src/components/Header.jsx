@@ -9,15 +9,15 @@ function Header() {
 
     React.useEffect(() => {
         axios.get("http://localhost:3000/skills.json")
-        .then(({ data }) => {
-            setMySkills(data.skills)
-        })
+            .then(({ data }) => {
+                setMySkills(data.skills)
+            })
     }, [])
 
     console.log(mySkills)
 
     return (
-        <div><header>
+        <div>
             <div className="container">
                 <div className="content">
                     <div className="content--nav-bar">
@@ -28,16 +28,15 @@ function Header() {
                             </p>
                         </div>
                         <div className="content--nav-bar__wrapper">
-                            <div className="content--nav-bar__link">
-                                <ul>
-                                    <li><a href="#">Main</a></li>
-                                    <li><a href="#">Portfolio</a></li>
-                                    <li><a href="#">About</a></li>
-                                    <li><a href="#">Contact</a></li>
-                                </ul>
-                                <button className="content--nav-bar__button"></button>
-                            </div>
-                        </div>
+            <div className="content--nav-bar__link">
+                <ul>
+                    <li><a href="#">Header</a></li>
+                    <li><a href="#">Main</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+        </div>
                     </div>
                 </div>
                 <div className="content--info">
@@ -52,7 +51,7 @@ function Header() {
                     </div>
                 </div>
                 <div className="skills--info">
-                    {mySkills.map((obj) => 
+                    {mySkills.map((obj) =>
                         <div className="skills-info__develoder">
                             <img src={obj.imageUrl} alt="#!"></img>
                             <h2>{obj.title}</h2>
@@ -61,7 +60,7 @@ function Header() {
                     )}
                 </div>
             </div>
-        </header>
+
         </div>
     )
 }
